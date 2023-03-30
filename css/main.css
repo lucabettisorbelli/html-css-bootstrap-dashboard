@@ -8,7 +8,7 @@
 }
 
 aside {
-    width: 55px;
+    min-width: 55px;
     background-color: #051e34;
     height: calc(100vh - 75px);
 }
@@ -34,8 +34,6 @@ aside {
 tr th img {
     width: 30px;
 }
-
-
 
 /* utilities */
 

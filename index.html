@@ -17,10 +17,11 @@
         <div class="container-fluid">
             <div class="d-flex justify-content-between align-items-center">
                 <div class="box_logo_mobile py-3">
-                    <img class="img-fluid" src="./img/mobile-logo.png" alt="">
+                    <img class="img-fluid d-md-none" src="./img/mobile-logo.png" alt="">
+                    <img class="img-fluid d-none d-md-block" src="./img/logo.svg" alt="">
                 </div>
-                <div class="search_bar">
-                    <input type="text" placeholder="Prova">
+                <div class="form-group col-8">
+                    <input type="text" class="form-control" placeholder="prova">
                 </div>
                 <div class="logo_bell">
                     <i class="fa-regular fa-bell"></i>
@@ -31,45 +32,63 @@
     <main class="d-flex">
         <aside class="d-flex flex-column justify-content-between align-items-center">
             <div class="icon_top pt-3">
-                <div class="home text-white">
-                    <i class="fa-solid fa-house"></i>
+                <div class="home text-white d-flex pt-1">
+                    <i class="fa-solid fa-house ps-2 pt-1"></i>
+                    <div class="logo_house px-3 d-none d-md-block">home</div>
                 </div>
-                <div class="statics text-white">
-                    <i class="fa-solid fa-house"></i>
+                <div class="statics text-white d-flex pt-1">
+                    <i class="fa-solid fa-house ps-2 pt-1"></i>
+                    <div class="logo_house px-3 d-none d-md-block">home</div>
                 </div>
-                <div class="volum text-white">
-                    <i class="fa-solid fa-house"></i>
+                <div class="volum text-white d-flex pt-1">
+                    <i class="fa-solid fa-house ps-2 pt-1"></i>
+                    <div class="logo_house px-3 d-none d-md-block">home</div>
                 </div>
             </div>
-            <div class="icon_bottom text-white pb-3">
-                <i class="fa-solid fa-gear"></i>
+            <div class="icon_bottom text-white d-flex align-items-center pb-3">
+                <i class="fa-solid fa-gear ps-2"></i>
+                <div class="logo_house px-3 d-none d-md-block">Admin</div>
             </div>
         </aside>
         <div class="cont_general d-flex flex-column">
             <section class="bg_blue">
-                <div class="container top_main text-white">
-                    <div class="row">
-                        <div class="col-8 py-4">
-                            <h3>Nuovo Studente</h3>
+                <div class="container-xl top_main text-white">
+                    <div class="row mt-2">
+                        <div class="col-8 my-2 d-flex">
+                            <h5>Nuovo Studente</h5>
+                            <button class="btn btn-outline-light ms-2">+</button>
                         </div>
-                        <div class="col-8 py-4">
-                            <h2>Boolean</h2>
+                        <div class="col-8 my-2">
+                            <div class="d-flex">
+                                <h4>Boolean</h4>
+                                <button class="btn btn-primary m-2 rounded">Piano Blaze</button>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <button class="btn btn-primary">3 app</button>
+                                <div>>></div>
+                                <button class="btn btn-primary rounded-circle">+</button>
+                            </div>
                         </div>
-                        <div class="col-8 py-4">
-                            <h2> Studenti online negli</h2>
+                        <div class="col-8 my-2">
+                            <h5> Studenti online negli ultimi 30 minuti</h5>
+                            <h4>125</h4>
                         </div>
                     </div>
                 </div>
             </section>
             <section>
-                <div class="container">
+                <div class="container-xl">
                     <div class="row">
-                        <div class="col-12">
+                        <div class="col-12 mt-2">
                             <table class="table caption-top border">
-                                <caption class="border text-black"><h3>Prossime classi</h3></caption>
+                                <caption class="border text-black">
+                                    <h3>Prossime classi</h3>
+                                </caption>
                                 <thead>
-                                    <tr>
+                                    <tr">
                                         <th scope="col">Nome</th>
+                                        <th class="d-none d-md-table-cell" scope="col">Data Inizio</th>
+                                        <th class="d-none d-md-table-cell" scope="col">ROI</th>
                                         <th scope="col">Stato</th>
                                         <th scope="col">Azioni</th>
                                     </tr>
@@ -80,6 +99,8 @@
                                             <img src="./img/class-avatar.jpg" alt="">
                                             Classe 75
                                         </th>
+                                        <td class="d-none d-md-table-cell">sdsa</td>
+                                        <td class="d-none d-md-table-cell">sss</td>
                                         <td class="badge bg-success">Done</td>
                                         <td>
                                             <i class="fa-solid fa-pen border border-2 rounded p-2"></i>
@@ -91,6 +112,8 @@
                                             <img src="./img/class-avatar.jpg" alt="">
                                             Classe 75
                                         </th>
+                                        <td class="d-none d-md-table-cell">sss</td>
+                                        <td class="d-none d-md-table-cell">sss</td>
                                         <td class="badge bg-success">Done</td>
                                         <td>
                                             <i class="fa-solid fa-pen border border-2 rounded p-2"></i>
@@ -102,6 +125,8 @@
                                             <img src="./img/class-avatar.jpg" alt="">
                                             Classe 75
                                         </th>
+                                        <td class="d-none d-md-table-cell">sss</td>
+                                        <td class="d-none d-md-table-cell">sss</td>
                                         <td class="badge bg-warning">Process</td>
                                         <td>
                                             <i class="fa-solid fa-pen border border-2 rounded p-2"></i>
@@ -113,6 +138,8 @@
                                             <img src="./img/class-avatar.jpg" alt="">
                                             Classe 75
                                         </th>
+                                        <td class="d-none d-md-table-cell">sss</td>
+                                        <td class="d-none d-md-table-cell">sss</td>
                                         <td class="badge bg-success">Done</td>
                                         <td>
                                             <i class="fa-solid fa-pen border border-2 rounded p-2"></i>
@@ -124,6 +151,8 @@
                                             <img src="./img/class-avatar.jpg" alt="">
                                             Classe 75
                                         </th>
+                                        <td class="d-none d-md-table-cell">sss</td>
+                                        <td class="d-none d-md-table-cell">sss</td>
                                         <td class="badge bg-danger">Failed</td>
                                         <td>
                                             <i class="fa-solid fa-pen border border-2 rounded p-2"></i>
@@ -135,6 +164,8 @@
                                             <img src="./img/class-avatar.jpg" alt="">
                                             Classe 75
                                         </th>
+                                        <td class="d-none d-md-table-cell">sss</td>
+                                        <td class="d-none d-md-table-cell">sss</td>
                                         <td class="badge bg-success">Done</td>
                                         <td>
                                             <i class="fa-solid fa-pen border border-2 rounded p-2"></i>
@@ -146,6 +177,8 @@
                                             <img src="./img/class-avatar.jpg" alt="">
                                             Classe 75
                                         </th>
+                                        <td class="d-none d-md-table-cell">sss</td>
+                                        <td class="d-none d-md-table-cell">sss</td>
                                         <td class="badge bg-danger">Failed</td>
                                         <td>
                                             <i class="fa-solid fa-pen border border-2 rounded p-2"></i>
@@ -157,6 +190,8 @@
                                             <img src="./img/class-avatar.jpg" alt="">
                                             Classe 75
                                         </th>
+                                        <td class="d-none d-md-table-cell">sss</td>
+                                        <td class="d-none d-md-table-cell">sss</td>
                                         <td class="badge bg-success">Done</td>
                                         <td>
                                             <i class="fa-solid fa-pen border border-2 rounded p-2"></i>
@@ -168,7 +203,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="container">
+                <div class="container-xl">
                     <div class="row">
                         <div class="col-12">
                             <div class="accordion" id="accordionExample">
@@ -239,7 +274,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="container">
+                <div class="container-xl">
                     <div class="row">
                         <div class="col-12">
                             <table class="table caption-top border">
@@ -247,19 +282,40 @@
                                 <thead>
                                     <tr>
                                         <th scope="col">
-                                            <input type="checkbox">
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-text">
+                                                    <input class="form-check-input mt-0" type="checkbox" value=""
+                                                        aria-label="Checkbox for following text input">
+                                                </div>
+                                                <input type="text" class="form-control"
+                                                    aria-label="Text input with checkbox">
+                                            </div>
                                         </th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <th scope="col">
-                                            <input type="checkbox">
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-text">
+                                                    <input class="form-check-input mt-0" type="checkbox" value=""
+                                                        aria-label="Checkbox for following text input">
+                                                </div>
+                                                <input type="text" class="form-control"
+                                                    aria-label="Text input with checkbox">
+                                            </div>
                                         </th>
                                     </tr>
                                     <tr>
                                         <th scope="col">
-                                            <input type="checkbox">
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-text">
+                                                    <input class="form-check-input mt-0" type="checkbox" value=""
+                                                        aria-label="Checkbox for following text input">
+                                                </div>
+                                                <input type="text" class="form-control"
+                                                    aria-label="Text input with checkbox">
+                                            </div>
                                         </th>
                                     </tr>
                                 </tbody>
@@ -267,7 +323,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="container">
+                <div class="container-xl">
                     <div class="row">
                         <div class="col-12">
                             <div class="card w-100" style="width: 18rem;">
