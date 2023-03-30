@@ -1,0 +1,13 @@
+.box_logo_mobile {
+    height: 75px;
+}
+
+.box_logo_mobile img {
+    height: 100%;
+}
+
+.lateral_bar {
+    width: 55px;
+
+    background-color: #051e34;
+}
