@@ -14,6 +14,7 @@ aside {
 }
 
 .cont_general {
+    height: calc(100vh - 75px);
     width: calc(100% - 55px);
     overflow-y: scroll;
 }
@@ -29,6 +30,11 @@ aside {
 .card {
     width: 100%;
 }
+
+tr th img {
+    width: 30px;
+}
+
 
 
 /* utilities */
