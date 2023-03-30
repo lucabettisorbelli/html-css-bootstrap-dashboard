@@ -6,8 +6,24 @@
     height: 100%;
 }
 
-.lateral_bar {
+aside {
     width: 55px;
-
     background-color: #051e34;
+    height: calc(100vh - 75px);
 }
+
+.cont_general {
+    width: calc(100% - 55px);
+}
+
+.top_main {
+    height: 260px;
+}
+
+.info_student {
+    height: 100%;
+}
+
+/* utilities */
+
+.bg_blue {background-color: #1b72e8;}
