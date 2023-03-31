@@ -12,6 +12,7 @@ body{
 aside {
     min-width: 50px;
     background-color: #051e34;
+    background-image: url(../img/sidebar-bg.png);
     height: calc(100vh - 75px);
 }
 
@@ -42,6 +43,11 @@ tr th img {
     top: 10px;
     left: 5px;
 }
+
+.col-8 .btn-primary {
+    background-color: #165bba;
+}
+
 /* utilities */
 
 .bg_blue {background-color: #1b72e8;}
