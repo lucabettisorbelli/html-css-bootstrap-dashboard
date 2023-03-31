@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
+
     <title>Document</title>
 </head>
 
@@ -66,7 +66,8 @@
                     <div class="row mt-2">
                         <div class="col-8 col-md-4 my-2 d-flex order-md-last">
                             <h5>Nuovo Studente</h5>
-                            <button class="btn btn-outline-light ms-2 but">+</button>
+                            <button class="btn btn-outline-light ms-2 but" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                            aria-controls="offcanvasExample">+</button>
                         </div>
                         <div class="col-8 col-md-4 my-2">
                             <div class="d-flex">
@@ -93,7 +94,7 @@
                 <div class="container-xxl">
                     <div class="row">
                         <div class="col-12 col-lg-8 mt-2">
-                        <!-- tabella -->
+                            <!-- tabella -->
                             <table class="table caption-top border">
                                 <caption class="border text-black bg-light">
                                     <h3>Prossime classi</h3>
@@ -105,7 +106,7 @@
                                         <th class="d-none d-md-table-cell" scope="col">ROI</th>
                                         <th scope="col">Stato</th>
                                         <th scope="col">Azioni</th>
-                                    </tr>
+                                        </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
@@ -214,12 +215,12 @@
                                     </tr>
                                 </tbody>
                             </table>
-                        <!-- F.A.Q. -->
+                            <!-- F.A.Q. -->
                             <div class="accordion" id="accordionExample">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
-                                        <button class="accordion-button bg-light" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                        <button class="accordion-button bg-light" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
                                             aria-controls="collapseOne">
                                             <h3>F.A.Q.</h3>
                                         </button>
@@ -305,7 +306,9 @@
                         <!-- todo -->
                         <div class="col-12 col-lg-4 mt-2">
                             <table class="table caption-top border">
-                                <caption class="border text-black bg-light"><h3>Todo</h3></caption>
+                                <caption class="border text-black bg-light">
+                                    <h3>Todo</h3>
+                                </caption>
                                 <thead>
                                     <tr>
                                         <th scope="col">
@@ -315,9 +318,10 @@
                                                         aria-label="Checkbox for following text input">
                                                 </div>
                                                 <input type="text" class="form-control"
-                                                    aria-label="Text input with checkbox" placeholder="Kickoff nuove classi">
+                                                    aria-label="Text input with checkbox"
+                                                    placeholder="Kickoff nuove classi">
                                             </div>
-                                        
+
                                         </th>
                                     </tr>
                                 </thead>
@@ -330,7 +334,8 @@
                                                         aria-label="Checkbox for following text input">
                                                 </div>
                                                 <input type="text" class="form-control"
-                                                    aria-label="Text input with checkbox" placeholder="Lezione su Bootstrap classe 5">
+                                                    aria-label="Text input with checkbox"
+                                                    placeholder="Lezione su Bootstrap classe 5">
                                             </div>
                                         </th>
                                     </tr>
@@ -342,13 +347,14 @@
                                                         aria-label="Checkbox for following text input">
                                                 </div>
                                                 <input type="text" class="form-control"
-                                                    aria-label="Text input with checkbox" placeholder="Controllare username Github studenti">
+                                                    aria-label="Text input with checkbox"
+                                                    placeholder="Controllare username Github studenti">
                                             </div>
                                         </th>
                                     </tr>
                                 </tbody>
                             </table>
-                        <!-- card -->
+                            <!-- card -->
                             <div class="card w-100">
                                 <img src="./img/stats.jpeg" class="card-img-top" alt="...">
                                 <ul class="list-group list-group-flush">
@@ -370,6 +376,33 @@
             </section>
         </div>
     </main>
+
+    <!-- offcanvas -->
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="">
+                (Mahatma Gandhi) Ho sempre tentato. Ho sempre fallito. Non discutere. Prova ancora. Fallisci ancora. Fallisci meglio. (Samuel Beckett) Se vuoi qualcosa che non hai mai avuto, devi fare qualcosa che non hai mai fatto. (Thomas Jefferson)
+                Si vive una vodka sola (Luca Betti)
+            </div>
+            <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu" style="">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">dajeee</a></li>
+                    <li><a class="dropdown-item" href="#">letsgoo</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
