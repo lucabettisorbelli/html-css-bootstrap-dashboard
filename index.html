@@ -11,20 +11,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <title>Document</title>
 </head>
 
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- header -->
     <header>
         <div class="container-fluid">
             <div class="d-flex justify-content-between align-items-center">
                 <div class="box_logo_mobile py-3">
-                    <img class="img-fluid d-lg-none" src="./img/mobile-logo.png" alt="">
-                    <img class="img-fluid d-none d-lg-block" src="./img/logo.svg" alt="">
+                    <img class="img-fluid d-md-none" src="./img/mobile-logo.png" alt="">
+                    <img class="img-fluid d-none d-md-block" src="./img/logo.svg" alt="">
                 </div>
-                <div class="form-group col-8">
+                <div class="form-group col-8 position-relative">
                     <input type="text" class="form-control" placeholder="prova a cercare: lezioni di Laravel">
+                    <i id="search" class="fa-solid fa-magnifying-glass"></i>
                 </div>
                 <div class="logo_bell d-flex px-2">
                     <i class="fa-solid fa-list d-none d-lg-block px-2"></i>
@@ -45,11 +48,11 @@
                 </div>
                 <div class="statics text-white d-flex pt-1">
                     <i class="fa-solid fa-house ps-2 pt-1"></i>
-                    <div class="logo_house px-3 d-none d-lg-block">home</div>
+                    <div class="logo_house px-3 d-none d-lg-block">Stats</div>
                 </div>
                 <div class="volum text-white d-flex pt-1">
-                    <i class="fa-solid fa-house ps-2 pt-1"></i>
-                    <div class="logo_house px-3 d-none d-lg-block">home</div>
+                    <i class="fa-solid fa-signal ps-2 pt-1"></i>
+                    <div class="logo_house px-3 d-none d-lg-block">Signal</div>
                 </div>
             </div>
             <div class="icon_bottom text-white d-flex align-items-center pb-3">
@@ -86,7 +89,7 @@
             <section>
                 <div class="container-xl">
                     <div class="row">
-                        <div class="box col-12 col-lg-8 mt-2">
+                        <div class="col-12 col-lg-8 mt-2">
                         <!-- tabella -->
                             <table class="table caption-top border">
                                 <caption class="border text-black">
@@ -107,8 +110,8 @@
                                             <img src="./img/class-avatar.jpg" alt="">
                                             Classe 75
                                         </th>
-                                        <td class="d-none d-md-table-cell">sdsa</td>
-                                        <td class="d-none d-md-table-cell">sss</td>
+                                        <td class="d-none d-md-table-cell">15 febbraio 2021</td>
+                                        <td class="d-none d-md-table-cell">20%</td>
                                         <td class="badge bg-success">Done</td>
                                         <td>
                                             <i class="fa-solid fa-pen border border-2 rounded p-2"></i>
@@ -120,8 +123,8 @@
                                             <img src="./img/class-avatar.jpg" alt="">
                                             Classe 75
                                         </th>
-                                        <td class="d-none d-md-table-cell">sss</td>
-                                        <td class="d-none d-md-table-cell">sss</td>
+                                        <td class="d-none d-md-table-cell">16 febbraio 2021</td>
+                                        <td class="d-none d-md-table-cell">20%</td>
                                         <td class="badge bg-success">Done</td>
                                         <td>
                                             <i class="fa-solid fa-pen border border-2 rounded p-2"></i>
@@ -133,8 +136,8 @@
                                             <img src="./img/class-avatar.jpg" alt="">
                                             Classe 75
                                         </th>
-                                        <td class="d-none d-md-table-cell">sss</td>
-                                        <td class="d-none d-md-table-cell">sss</td>
+                                        <td class="d-none d-md-table-cell">17 febbraio 2021</td>
+                                        <td class="d-none d-md-table-cell">20%</td>
                                         <td class="badge bg-warning">Process</td>
                                         <td>
                                             <i class="fa-solid fa-pen border border-2 rounded p-2"></i>
@@ -146,8 +149,8 @@
                                             <img src="./img/class-avatar.jpg" alt="">
                                             Classe 75
                                         </th>
-                                        <td class="d-none d-md-table-cell">sss</td>
-                                        <td class="d-none d-md-table-cell">sss</td>
+                                        <td class="d-none d-md-table-cell">18 febbraio 2021</td>
+                                        <td class="d-none d-md-table-cell">20%</td>
                                         <td class="badge bg-success">Done</td>
                                         <td>
                                             <i class="fa-solid fa-pen border border-2 rounded p-2"></i>
@@ -159,8 +162,8 @@
                                             <img src="./img/class-avatar.jpg" alt="">
                                             Classe 75
                                         </th>
-                                        <td class="d-none d-md-table-cell">sss</td>
-                                        <td class="d-none d-md-table-cell">sss</td>
+                                        <td class="d-none d-md-table-cell">19 febbraio 2021</td>
+                                        <td class="d-none d-md-table-cell">20%</td>
                                         <td class="badge bg-danger">Failed</td>
                                         <td>
                                             <i class="fa-solid fa-pen border border-2 rounded p-2"></i>
@@ -172,8 +175,8 @@
                                             <img src="./img/class-avatar.jpg" alt="">
                                             Classe 75
                                         </th>
-                                        <td class="d-none d-md-table-cell">sss</td>
-                                        <td class="d-none d-md-table-cell">sss</td>
+                                        <td class="d-none d-md-table-cell">20 febbraio 2021</td>
+                                        <td class="d-none d-md-table-cell">20%</td>
                                         <td class="badge bg-success">Done</td>
                                         <td>
                                             <i class="fa-solid fa-pen border border-2 rounded p-2"></i>
@@ -185,8 +188,8 @@
                                             <img src="./img/class-avatar.jpg" alt="">
                                             Classe 75
                                         </th>
-                                        <td class="d-none d-md-table-cell">sss</td>
-                                        <td class="d-none d-md-table-cell">sss</td>
+                                        <td class="d-none d-md-table-cell">21 febbraio 2021</td>
+                                        <td class="d-none d-md-table-cell">20%</td>
                                         <td class="badge bg-danger">Failed</td>
                                         <td>
                                             <i class="fa-solid fa-pen border border-2 rounded p-2"></i>
@@ -198,8 +201,8 @@
                                             <img src="./img/class-avatar.jpg" alt="">
                                             Classe 75
                                         </th>
-                                        <td class="d-none d-md-table-cell">sss</td>
-                                        <td class="d-none d-md-table-cell">sss</td>
+                                        <td class="d-none d-md-table-cell">22 febbraio 2021</td>
+                                        <td class="d-none d-md-table-cell">20%</td>
                                         <td class="badge bg-success">Done</td>
                                         <td>
                                             <i class="fa-solid fa-pen border border-2 rounded p-2"></i>
@@ -215,7 +218,7 @@
                                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                             data-bs-target="#collapseOne" aria-expanded="true"
                                             aria-controls="collapseOne">
-                                            Accordion Item #1
+                                            <h3>F.A.Q.</h3>
                                         </button>
                                     </h2>
                                     <div id="collapseOne" class="accordion-collapse collapse show"
@@ -276,9 +279,9 @@
                             </div>
                         </div>
                         <!-- todo -->
-                        <div class="box col-12 col-lg-4">
+                        <div class="col-12 col-lg-4 mt-2">
                             <table class="table caption-top border">
-                                <caption class="border">Todo</caption>
+                                <caption class="border"><h3>Todo</h3></caption>
                                 <thead>
                                     <tr>
                                         <th scope="col">
@@ -288,7 +291,7 @@
                                                         aria-label="Checkbox for following text input">
                                                 </div>
                                                 <input type="text" class="form-control"
-                                                    aria-label="Text input with checkbox" placeholder="ffddfd">
+                                                    aria-label="Text input with checkbox" placeholder="Kickoff nuove classi">
                                             </div>
                                         
                                         </th>
@@ -303,7 +306,7 @@
                                                         aria-label="Checkbox for following text input">
                                                 </div>
                                                 <input type="text" class="form-control"
-                                                    aria-label="Text input with checkbox" placeholder="dsdfdf">
+                                                    aria-label="Text input with checkbox" placeholder="Lezione su Bootstrap classe 5">
                                             </div>
                                         </th>
                                     </tr>
@@ -315,7 +318,7 @@
                                                         aria-label="Checkbox for following text input">
                                                 </div>
                                                 <input type="text" class="form-control"
-                                                    aria-label="Text input with checkbox" placeholder="fddf">
+                                                    aria-label="Text input with checkbox" placeholder="Controllare username Github studenti">
                                             </div>
                                         </th>
                                     </tr>
@@ -325,13 +328,16 @@
                             <div class="card w-100">
                                 <img src="./img/stats.jpeg" class="card-img-top" alt="...">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">An item</li>
-                                    <li class="list-group-item">A second item</li>
-                                    <li class="list-group-item">A third item</li>
+                                    <li class="list-group-item">
+                                        <h3>Utenti attivi</h3>
+                                        <p>Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                                    </li>
+                                    <li class="list-group-item">Gennaio: 1200</li>
+                                    <li class="list-group-item">Febbraio: 800</li>
+                                    <li class="list-group-item">Marzo: 1500</li>
                                 </ul>
                                 <div class="card-body">
-                                    <a href="#" class="card-link">Card link</a>
-                                    <a href="#" class="card-link">Another link</a>
+                                    <a href="#" class="card-link">Visualizza Report approfondito</a>
                                 </div>
                             </div>
                         </div>

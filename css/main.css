@@ -10,19 +10,15 @@ body{
 }
 
 aside {
-    min-width: 55px;
+    min-width: 50px;
     background-color: #051e34;
     height: calc(100vh - 75px);
 }
 
 .cont_general {
     height: calc(100vh - 75px);
-    width: calc(100% - 55px);
+    width: calc(100% - 50px);
     overflow-y: scroll;
-}
-
-.col-12 {
-    /* min-height: 100px; */
 }
 
 .info_student {
@@ -41,6 +37,11 @@ tr th img {
     height: 40px;
 }
 
+#search {
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
 /* utilities */
 
 .bg_blue {background-color: #1b72e8;}
