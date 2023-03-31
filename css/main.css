@@ -37,6 +37,10 @@ tr th img {
     width: 30px;
 }
 
+.but {
+    height: 40px;
+}
+
 /* utilities */
 
 .bg_blue {background-color: #1b72e8;}
