@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <!-- header -->
     <header>
         <div class="container-fluid">
             <div class="d-flex justify-content-between align-items-center">
@@ -23,15 +24,19 @@
                     <img class="img-fluid d-none d-lg-block" src="./img/logo.svg" alt="">
                 </div>
                 <div class="form-group col-8">
-                    <input type="text" class="form-control" placeholder="prova">
+                    <input type="text" class="form-control" placeholder="prova a cercare: lezioni di Laravel">
                 </div>
-                <div class="logo_bell">
-                    <i class="fa-regular fa-bell"></i>
+                <div class="logo_bell d-flex px-2">
+                    <i class="fa-solid fa-list d-none d-lg-block px-2"></i>
+                    <i class="fa-solid fa-question d-none d-lg-block px-2"></i>
+                    <i class="fa-solid fa-exclamation d-none d-lg-block px-2"></i>
+                    <i class="fa-regular fa-bell text-warning px-2"></i>
                 </div>
             </div>
         </div>
     </header>
     <main class="d-flex">
+        <!-- lateral bar -->
         <aside class="d-flex flex-column justify-content-between align-items-center">
             <div class="icon_top pt-3">
                 <div class="home text-white d-flex pt-1">
@@ -81,6 +86,7 @@
             <section>
                 <div class="container-xl">
                     <div class="row">
+                        <!-- tabella -->
                         <div class="col-12 col-lg-8 mt-2">
                             <table class="table caption-top border">
                                 <caption class="border text-black">
@@ -203,9 +209,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        
-                
-                
+                        <!-- F.A.Q. -->
                         <div class="col-12 col-lg-8">
                             <div class="accordion" id="accordionExample">
                                 <div class="accordion-item">
@@ -273,8 +277,7 @@
                                 </div>
                             </div>
                         </div>
-                
-                
+                        <!-- todo -->
                         <div class="col-12 col-lg-4">
                             <table class="table caption-top border">
                                 <caption class="border">Todo</caption>
@@ -287,8 +290,9 @@
                                                         aria-label="Checkbox for following text input">
                                                 </div>
                                                 <input type="text" class="form-control"
-                                                    aria-label="Text input with checkbox">
+                                                    aria-label="Text input with checkbox" placeholder="ffddfd">
                                             </div>
+                                        
                                         </th>
                                     </tr>
                                 </thead>
@@ -301,7 +305,7 @@
                                                         aria-label="Checkbox for following text input">
                                                 </div>
                                                 <input type="text" class="form-control"
-                                                    aria-label="Text input with checkbox">
+                                                    aria-label="Text input with checkbox" placeholder="dsdfdf">
                                             </div>
                                         </th>
                                     </tr>
@@ -313,14 +317,14 @@
                                                         aria-label="Checkbox for following text input">
                                                 </div>
                                                 <input type="text" class="form-control"
-                                                    aria-label="Text input with checkbox">
+                                                    aria-label="Text input with checkbox" placeholder="fddf">
                                             </div>
                                         </th>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
-               
+                        <!-- card -->
                         <div class="col-12 col-lg-4">
                             <div class="card w-100">
                                 <img src="./img/stats.jpeg" class="card-img-top" alt="...">
